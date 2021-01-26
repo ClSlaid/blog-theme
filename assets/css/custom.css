@@ -1,0 +1,7 @@
+.spoiler{
+    color: white;
+    background-color: white;
+}
+.spoiler:hover{
+    color: #34495e;
+}

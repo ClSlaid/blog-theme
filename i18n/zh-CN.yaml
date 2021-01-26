@@ -1,102 +1,102 @@
 # ===== title =====
 archive:
-  other: "归档"
+  other: "Archiv"
 
 tags:
-  other: "标签"
+  other: "Tags"
 
 categories:
-  other: "分类"
+  other: "Kategorien"
 
 # ===== footer =====
 powered:
-  other: "由 %s 强力驱动"
+  other: "Powered by %s"
 
 theme:
-  other: "主题"
+  other: "Theme"
 
 siteUV:
-  other: "本站总访客数 %s 人"
+  other: "site uv: %s"
 
 sitePV:
-  other: "本站总访问量 %s 次"
+  other: "site pv: %s"
 
 pagePV:
-  other: "%s 次阅读"
+  other: "%s mal gelesen"
 
 # ===== post =====
 prevPage:
-  other: "上一页"
+  other: "vorher"
 
 nextPage:
-  other: "下一页"
+  other: "nächstes"
 
 prevPost:
-  other: "上一篇"
+  other: "vorher"
 
 nextPost:
-  other: "下一篇"
+  other: "nächstes"
 
 toc:
-  other: "文章目录"
+  other: "Inhalt"
 
 readMore:
-  other: "阅读更多"
+  other: "Weiterlesen..."
 
 reward:
-  other: "赞赏支持"
+  other: "Belohnung"
 
 rewardAlipay:
-  other: "支付宝打赏"
+  other: "alipay"
 
 rewardWechat:
-  other: "微信打赏"
+  other: "wechat"
 
 wordCount:
-  one: "约 {{ .Count }} 字"
-  other: "约 {{ .Count }} 字"
+  one: "{{ .Count }} Wort"
+  other: "{{ .Count }} Wörter"
 
 readingTime:
-  one: "预计阅读 {{ .Count }} 分钟"
-  other: "预计阅读 {{ .Count }} 分钟"
+  one: "{{ .Count }} Min Lesezeit"
+  other: "{{ .Count }} Min Lesezeit"
 
 outdatedInfoWarningBefore:
-  other: "【注意】最后更新于 "
+  other: "[HINWEIS] aktualisiert "
 
 outdatedInfoWarningAfter:
-  other: "，文中内容可能已过时，请谨慎使用。"
+  other: ". Der Inhalt dieses Artikels kann veraltet sein."
 
 # ===== content license =====
 author:
-  other: "文章作者"
+  other: "Autor"
 
 lastMod:
-  other: "上次更新"
+  other: "letzte Änderung"
 
 markdown:
-  other: "原始文档"
+  other: "Markdown"
 
 seeMarkDown:
-  other: "查看本文 Markdown 版本 »"
+  other: "Die Markdown Version »"
 
 license:
-  other: "许可协议"
+  other: "Lizenz"
 
 # ===== counter =====
 archiveCounter:
-  one: "共计 {{ .Count }} 篇文章"
-  other: "共计 {{ .Count }} 篇文章"
+  one: "{{ .Count }} Aritkel in Summe"
+  other: "{{ .Count }} Artikel in Summe"
 
 tagCounter:
-  one: "共计 {{ .Count }} 个标签"
-  other: "共计 {{ .Count }} 个标签"
+  one: "{{ .Count }} Tag in Summe"
+  other: "{{ .Count }} Tags in Summe"
 
 zeroTagCounter:
-  other: "暂无标签"
+  other: "Keine Tags"
 
 categoryCounter:
-  one: "共计 {{ .Count }} 个分类"
-  other: "共计 {{ .Count }} 个分类"
+  one: "{{ .Count }} Kategorie in Summe"
+  other: "{{ .Count }} Kategorien in Summe"
 
 zeroCategoryCounter:
-  other: "暂无分类"
+  other: "Keine Kategorien"

@@ -30,6 +30,9 @@ hideHeaderAndFooter: false
 # Comment this out to use the global config.
 #enableOutdatedInfoWarning: false
 
+Katex: true
+markup: "mmark"
+
 flowchartDiagrams:
   enable: false
   options: ""

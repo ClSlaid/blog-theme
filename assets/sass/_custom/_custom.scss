@@ -2,3 +2,75 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+// fix tab width
+div,p,span,textarea {
+  -tab-size     : 4;
+  -o-tab-size   : 4;
+  -moz-tab-size : 4;
+};
+$theme-color-config: 'Asuka Red';
+$logo-font-size: 28px !default;
+// Default theme color map
+$theme-color-map: (
+  'Default': #c05b4d #f8f5ec,
+  'Mint Green': #16982B #f5f5f5,
+  'Cobalt Blue': #0047AB #f0f2f5,
+  'Hot Pink': #FF69B4 #f8f5f5,
+  'Dark Violet': #9932CC #f5f4fa,
+  'Asuka Red': #cc3507 #fdf6e3,
+);
+ // Check theme color config.
+// if it does not exist, use default theme color.
+@if not(map-has-key($theme-color-map, $theme-color-config)) {
+  $theme-color-config: 'Default';
+}
+$theme-color-list: map-get($theme-color-map, $theme-color-config);
+
+// Default theme color of the site.
+$theme-color: nth($theme-color-list, 1) !default;
+
+// Deputy theme color of the site.
+$deputy-color: nth($theme-color-list, 2) !default;
+
+/* Sarasa Mono*/
+@font-face {
+  font-family: 'Sarasa Mono SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sarasa Mono SC');
+  src: url('../fonts/sarasa/sarasa-mono-sc-regular.woff2') format('woff2'),
+       url('../fonts/sarasa/sarasa-mono-sc-regular.woff') format('woff'),
+       url('../fonts/sarasa/sarasa-mono-sc-regular.ttf') format('truetype'),
+       url('../fonts/sarasa/sarasa-mono-sc-regular.otf') format('opentype'),
+       url('../fonts/sarasa/sarasa-mono-sc-regular.svg') format('svg');
+
+  /* src: local('Sarasa Mono SC'); */
+}
+
+// Font family of the code.
+$code-font-family: "Sarasa Mono SC", "Fira Code", Consolas, Monaco, Menlo, "DejaVu Sans Mono",
+ "Bitstream Vera Sans Mono", "Courier New", monospace ;
+ // Color of code highlight, solarized.
+$code-highlight-color: (
+  comment: #93a1a1,
+  keyword: #859900,
+  number: #2aa198,
+  title: #268bd2,
+  attribute: #b58900,
+  symbol: #cb4b16,
+  built_in: #dc322f,
+  formula: #eee8d5
+);
+
+
+
+// ===== TOC ===== //
+
+$post-toc-backgroud: rgba($deputy-color, 0.8);
+
+// === fix svg style ===//
+
+svg{ height: auto};
